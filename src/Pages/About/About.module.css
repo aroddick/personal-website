@@ -1,0 +1,9 @@
+.container {
+  background-color: gray;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+}

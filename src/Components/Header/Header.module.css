@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.links {
+  /* margin-top: 1rem; */
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding: 10px 20px;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.active {
+  border: 1px solid white!important;
+}
