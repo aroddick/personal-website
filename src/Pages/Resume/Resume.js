@@ -1,10 +1,11 @@
 import React from 'react';
 // import classes from './Home.module.css';
+import headshot from '../../assets/headshot.jpg';
 
 const Resume = () => {
   return (
     <div>
-      Resume
+      <img src={headshot}></img>
     </div>
   )
 }

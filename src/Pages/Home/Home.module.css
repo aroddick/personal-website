@@ -1,8 +1,9 @@
-img {
+.hero {
   height: 100vh;
   width: 100%;
   object-fit: cover;
   filter: brightness(80%);
+  /* filter: blur(4px); */
 }
 
 .bodyContainer {
@@ -13,9 +14,15 @@ img {
 
 .body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   font-size: 80px;
   font-weight: 100;
   line-height: 1.15;
+}
+
+.links svg {
+  font-size: 3rem;
+  margin: 1rem;
 }
