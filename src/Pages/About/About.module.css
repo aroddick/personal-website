@@ -65,6 +65,16 @@
 .row {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.row > * {
+  margin: 2rem;
+}
+
+.row > img {
+  width: auto;
+  max-width: 40%;
 }
 
 /* .row > p {

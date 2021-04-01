@@ -26,3 +26,14 @@
   font-size: 3rem;
   margin: 1rem;
 }
+
+.links a {
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
