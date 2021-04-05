@@ -1,9 +1,11 @@
 .header {
   position: relative;
+  
 }
 
 .hero {
   height: 100vh;
+  min-height: 700px;
   width: 100%;
   object-fit: cover;
   filter: blur(4px);
@@ -16,14 +18,8 @@
 
 .container {
   position: absolute;
-  top: 20%;
+  top: 25%;
   width: 100%;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .description {
@@ -55,27 +51,38 @@
   margin-top: -20px;
 }
 
-.content > img {
+.profile {
   border-radius: 50%;
 }
 
 .column {
-  background-color: #e6f6ff;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.row > * {
   margin: 2rem;
 }
 
-.row > img {
+/* .row > * {
+  margin: 2rem;
+} */
+
+.interests {
+  background-color: #e6f6ff;
+}
+
+.column > div > * {
+  margin: 0 2rem;
+}
+
+.picture {
   width: auto;
   max-width: 40%;
 }
@@ -87,3 +94,24 @@
 .row > img {
   
 } */
+
+.links svg {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.links a {
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}

@@ -1,9 +1,13 @@
 .hero {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   filter: brightness(80%);
   /* filter: blur(4px); */
+}
+
+.imageContainer {
+  height: 100vh;
 }
 
 .bodyContainer {
