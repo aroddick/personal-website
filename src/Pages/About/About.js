@@ -8,14 +8,16 @@ import osu from '../../assets/osu.jpeg';
 const About = () => {
   return (
     <div>
-      <div className={classes.imageContainer}>
-        <img className={classes.hero} src={ucsb}></img>
-      </div>
-      <div className={classes.container}>
-        <div className={classes.content}>
-          <img width='300' src={headshot}></img>
-          <div className={classes.description}>
-            Hello Everyone! I am a fourth year Computer Science student at the University of California, Santa Barbara. I am pursuing a masters in Computer Science.
+      <div className={classes.header}>
+        <div className={classes.imageContainer}>
+          <img className={classes.hero} src={ucsb}></img>
+        </div>
+        <div className={classes.container}>
+          <div className={classes.content}>
+            <img width='300' src={headshot}></img>
+            <div className={classes.description}>
+              Hello Everyone! I am a fourth year Computer Science student at the University of California, Santa Barbara. I am pursuing a masters in Computer Science.
+          </div>
           </div>
         </div>
       </div>

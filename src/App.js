@@ -11,12 +11,16 @@ function App() {
   return (
     <div>
       <Header />
-      <Switch>
+      {/* <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' exact component={About} />
         <Route path='/resume' exact component={Resume} />
         <Route path='/projects' exact component={Projects} />
-      </Switch>
+      </Switch> */}
+      <Home />
+      <About />
+      <Resume />
+      <Projects />
       <footer> <small>Copyright &copy; {new Date().getFullYear()} </small> </footer> 
     </div>
 
