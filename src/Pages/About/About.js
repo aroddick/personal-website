@@ -11,7 +11,7 @@ import {
 
 const About = () => {
   return (
-    <div id='about'>
+    <div id='about' className='section'>
       <div className={classes.header}>
         <div className={classes.imageContainer}>
           <img className={classes.hero} src={ucsb}></img>
@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </div>
       <div className={classes.interests}>
-        <h2>Interests</h2>
+        <h1>Interests</h1>
         {/* <div className={classes.column}>
           <div className={classes.row}>
             <p>I've been playing guitar for about 10 years. It is one of my favorite things to do when I am stressed.</p>
