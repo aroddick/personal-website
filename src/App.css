@@ -40,3 +40,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.sticky {
+  position: fixed!important;
+  top: 0;
+  width: 100%;
+  bottom: auto!important;
+  background:rgba(54,99,143, 0.9);
+}

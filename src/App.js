@@ -8,6 +8,26 @@ import Projects from './Pages/Projects/Projects';
 import './App.css';
 
 function App() {
+  window.onscroll = function () { makeSticky() };
+  var header = document.getElementById('header');
+  var sticky;
+  if (header) {
+    sticky = header.offsetTop;
+  }
+
+  function makeSticky() {
+    if (!header) {
+      header = document.getElementById('header');
+      sticky = header.offsetTop;
+    }
+    if (header) {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  }
   return (
     <div>
       <Header />

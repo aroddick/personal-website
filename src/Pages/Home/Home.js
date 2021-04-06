@@ -8,7 +8,7 @@ import {
 
 const Home = () => {
   return (
-    <div className={classes.imageContainer}>
+    <div className={classes.imageContainer} id='home'>
       <img className={classes.hero} src={Hero}></img>
       <div className={classes.bodyContainer}>
         <div className={classes.body}>

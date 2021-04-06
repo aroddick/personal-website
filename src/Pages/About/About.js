@@ -19,7 +19,7 @@ const About = () => {
         <div className={classes.container}>
           <div className={classes.row}>
             <img className={classes.profile} width='300' src={headshot}></img>
-            <div className={classes.description}>
+            <div className={classes.introduction}>
               Hello Everyone! I am a fourth year Computer Science student at the University of California, Santa Barbara. I am pursuing a masters in Computer Science.
             </div>
           </div>
@@ -35,7 +35,8 @@ const About = () => {
         </div>
       </div>
       <div className={classes.interests}>
-        <div className={classes.column}>
+        <h2>Interests</h2>
+        {/* <div className={classes.column}>
           <div className={classes.row}>
             <p>I've been playing guitar for about 10 years. It is one of my favorite things to do when I am stressed.</p>
             <img className={classes.picture} src={guitar}></img>
@@ -43,6 +44,24 @@ const About = () => {
           <div className={classes.row}>
             <img className={classes.picture} src={osu}></img>
             <p>Huuuuuuuuge Ohio State football fan. Happy the season is resumed and will cheer them on to the championship!</p>
+          </div>
+        </div> */}
+        <div className={classes.row}>
+          <div className={classes.interest}>
+            <img className={classes.picture} src={guitar} style={{ objectPosition: '50% 0%' }}></img>
+            <p className={classes.description}>I've been playing guitar for about 10 years. It is one of my favorite things to do when I am stressed.</p>
+          </div>
+          <div className={classes.interest}>
+            <img className={classes.picture} src={osu}></img>
+            <p className={classes.description}>Huuuuuuuuge Ohio State football fan. Happy the season is resumed and will cheer them on to the championship!</p>
+          </div>
+        </div>
+        <div className={classes.row}>
+          <div className={classes.interest}>
+            <img className={classes.picture} src={guitar} style={{ objectPosition: '50% 0%' }}></img>
+          </div>
+          <div className={classes.interest}>
+            <img className={classes.picture} src={osu}></img>
           </div>
         </div>
       </div>
