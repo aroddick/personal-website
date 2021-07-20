@@ -1,15 +1,30 @@
-.column {
+/* .column {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .section p {
   margin: 0;
 }
 
+.description{
+  margin: 1rem;
+  width: 100%;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
 
 .row {
   display: flex;
+}
+
+.list .row {
   align-items: center;
 }
 
@@ -18,20 +33,29 @@
 }
 
 .section {
-  max-width: 1200px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
-  padding-top: 0;
+  padding-top: 4rem;
 }
 
-.section h1 {
-  text-align: center;
-  border-bottom: 1px solid #E8E8E8;
+.description h2 {
+  color: rgb(0,54,96);
   margin: 0;
 }
 
-.section h2 {
-  color: rgb(0, 87, 125);
+.section ul {
   margin: 0;
 }
+
+.skills {
+  justify-content: center;
+}
+
+.skills > div {
+  margin: 0 5rem;
+}
+
+/* .skills ul {
+  text-align: left;
+} */

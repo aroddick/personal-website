@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Resume from './Pages/Resume/Resume';
 import Projects from './Pages/Projects/Projects';
+import Contact from './Pages/Contact/Contact';
 import './App.css';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <About />
       <Resume />
       <Projects />
+      <Contact />
       <footer> <small>Copyright &copy; {new Date().getFullYear()} </small> </footer>
     </div>
 

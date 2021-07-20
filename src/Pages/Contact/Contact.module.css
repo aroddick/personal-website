@@ -1,0 +1,28 @@
+.container {
+  background:rgba(54,99,143, 0.9);
+}
+
+.container h1 {
+  color: white;
+  border-bottom: none;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container form input {
+  width: 50%;
+  padding: 0 2%;
+  margin: 10px;
+  height: 40px;
+}
+
+#message {
+  height: 100px;
+  width: 50%;
+  padding: 0 2%;
+  margin: 10px;
+}
