@@ -1,5 +1,6 @@
 .container {
   background:rgba(54,99,143, 0.9);
+  text-align: center;
 }
 
 .container h1 {
@@ -7,22 +8,61 @@
   border-bottom: none;
 }
 
-.container form {
+form {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 10px 0 20px;
+  justify-content: space-between;
 }
 
-.container form input {
-  width: 50%;
-  padding: 0 2%;
-  margin: 10px;
-  height: 40px;
+.row > div {
+  width: 100%;
+  
 }
 
-#message {
-  height: 100px;
-  width: 50%;
-  padding: 0 2%;
-  margin: 10px;
+.col6 {
+  max-width: 48%;
+}
+
+input {
+  padding: 15px 10px;
+  font-size: 125%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat-SemiBold';
+}
+
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  height: 170px;
+  padding: 25px 10px;
+  font-size: 125%;
+  box-sizing: border-box;
+  font-family: Montserrat-SemiBold;
+}
+
+button {
+  border-radius: 25px;
+  height: 50px;
+  padding: 0 40px;
+  outline: none;
+  border: none;
+  font-family: Montserrat-Medium;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
 }
