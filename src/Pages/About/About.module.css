@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  
 }
 
 .hero {
@@ -30,7 +29,6 @@
   position: relative;
 	padding: 10px 20px;
   border-radius: 25px;
-  /* width: 40%; */
   margin-left: 3rem;
   padding: 1rem;
   color: white; 
@@ -55,26 +53,15 @@
   border-radius: 50%;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .row {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .row .introduction {
   align-self: center;
 }
-
-/* .row > * {
-  margin: 2rem;
-} */
 
 .interest {
   width: 400px;
@@ -93,14 +80,6 @@
   height: 400px;
   object-fit: cover;
 }
-
-/* .row > p {
-  width: 50%;
-}
-
-.row > img {
-  
-} */
 
 .links svg {
   font-size: 3rem;

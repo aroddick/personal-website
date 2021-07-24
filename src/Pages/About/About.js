@@ -2,17 +2,12 @@ import React from 'react';
 import classes from './About.module.css';
 import headshot from '../../assets/headshot.jpg';
 import ucsb from '../../assets/ucsb.jpeg';
-import guitar from '../../assets/guitar.JPG';
-import osu from '../../assets/osu.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLinkedin, faGithub
-} from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   return (
-    <div id='about' className='section'>
+    <div id='about'>
       <div className={classes.header}>
         <div className={classes.imageContainer}>
           <img className={classes.hero} src={ucsb}></img>
