@@ -7,7 +7,7 @@ import { faExternalLinkAlt, faPaperPlane } from '@fortawesome/free-solid-svg-ico
 
 const About = () => {
   return (
-    <div id='about'>
+    <div id='about' className='section'>
       <div className={classes.header}>
         <div className={classes.imageContainer}>
           <img className={classes.hero} src={ucsb}></img>

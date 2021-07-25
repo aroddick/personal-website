@@ -39,12 +39,6 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/about' exact component={About} />
-        <Route path='/resume' exact component={Resume} />
-        <Route path='/projects' exact component={Projects} />
-      </Switch> */}
       <Home />
       <About />
       <Resume />
