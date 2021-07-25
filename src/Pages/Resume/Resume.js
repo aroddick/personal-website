@@ -40,6 +40,22 @@ const Resume = () => {
       <h1>Work Experience</h1>
       <div className={classes.list}>
         <div className={classes.row}>
+          <img src={ebay} width={150}></img>
+          <div className={classes.description}>
+            <div className={classes.row}>
+              <h2>Software Engineering Intern</h2>
+              <p>June 2020 - September 2020</p>
+            </div>
+            <ul>
+              <li>Developed an API to enhance inventory curation by aggregating 10 metrics for a given item</li>
+              <li>Designed a modal on frontend to showcase metrics in tables, charts, and graphs</li>
+              <li>Collaborated with 3 other teams to supplement additional data to service</li>
+              <li>Researched a way to incorporate image quality recognition on site</li>
+            </ul>
+          </div>
+        </div>
+        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ width: '100%', fontSize: '3rem' }} />
+        <div className={classes.row}>
           <img src={ucsb} width={150}></img>
           <div className={classes.description}>
             <div className={classes.row}>
@@ -67,8 +83,8 @@ const Resume = () => {
               <li>Designed a modal on frontend to showcase metrics in tables, charts, and graphs</li>
               <li>Collaborated with 3 other teams to supplement additional data to service</li>
               <li>Researched a way to incorporate image quality recognition on site</li>
-            </ul></div>
-
+            </ul>
+          </div>
         </div>
 
       </div>

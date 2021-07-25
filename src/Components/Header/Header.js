@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-// import { NavHashLink } from 'react-router-hash-link';
-// import { NavLink, Link } from 'react-router-dom';
 import classes from './Header.module.css';
 
 function addActive(links, sections, i) {
@@ -35,16 +33,6 @@ const Header = () => {
   return (
     <div className={classes.container} id='header'>
       <div className={classes.links}>
-        {/* <NavHashLink to='/#home' activeClassName={classes.active} isActive={() => inView('home')}>Home</NavHashLink>
-        <NavHashLink to='/#about' activeClassName={classes.active} isActive={() => inView('about')}>About</NavHashLink>
-        <NavHashLink to='/#resume' activeClassName={classes.active} isActive={() => inView('resume')}>Resume</NavHashLink>
-        <NavHashLink to='/#project' activeClassName={classes.active} isActive={() => inView('project')}>Projects</NavHashLink> */}
-
-        {/* <NavLink to='/#home' activeClassName={classes.active}>Home</NavLink>
-        <NavLink to='/#about' activeClassName={classes.active}>About</NavLink>
-        <NavLink to='/#resume' activeClassName={classes.active}>Resume</NavLink>
-        <NavLink to='/#project' activeClassName={classes.active}>Projects</NavLink> */}
-
         <a href='#home'>Home</a>
         <a href='#about'>About</a>
         <a href='#resume'>Resume</a>
