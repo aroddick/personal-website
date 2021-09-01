@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
@@ -9,7 +8,6 @@ import Contact from './Pages/Contact/Contact';
 import './App.css';
 
 function App() {
-  // window.onscroll = function () { makeSticky() };
   useEffect(() => {
     var header = document.getElementById('header');
     var sticky;

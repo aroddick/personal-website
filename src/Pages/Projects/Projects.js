@@ -1,7 +1,5 @@
 import classes from './Projects.module.css';
 import React, { useState } from 'react';
-import osu from '../../assets/osu.jpeg';
-// import '../../css/bootstrap.css';
 import Slideshow from './Slideshow.js';
 import telahance from '../../assets/telahance.png';
 import gauchotime from '../../assets/gauchotime.png';
@@ -18,9 +16,6 @@ import gauchotime1 from '../../assets/gauchotime/gauchotime-1.png'
 import gauchotime2 from '../../assets/gauchotime/gauchotime-2.png'
 import gauchotime3 from '../../assets/gauchotime/gauchotime-3.png'
 import gauchotime4 from '../../assets/gauchotime/gauchotime-4.png'
-
-
-
 
 const Projects = () => {
 
@@ -48,19 +43,15 @@ const Projects = () => {
 		gauchotime3,
 		gauchotime4
 	]
-	const telahanceDescription = 'Capstone project'
-	const gauchotimeDescription = 'School group project'
 	const telahanceGithub = 'https://github.com/aroddick/TeladocCapstone'
 	const gauchotimeGithub = 'https://github.com/aroddick/cs48-wewritecode'
 	const data = {
 		'telahance': {
 			'images': telahanceImgs,
-			'description': telahanceDescription,
 			'link': telahanceGithub
 		},
 		'gauchotime': {
 			'images': gauchotimeImgs,
-			'description': gauchotimeDescription,
 			'link': gauchotimeGithub
 		}
 	};

@@ -1,11 +1,6 @@
 import React from 'react';
 import { Modal, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import '../../css/bootstrap.css';
-import classes from './Slideshow.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-
 
 const Slideshow = ({ show, handleClose, data }) => {
 	return (
@@ -13,8 +8,7 @@ const Slideshow = ({ show, handleClose, data }) => {
 			<Modal.Header closeButton>
 				<Modal.Title>
 					<div>
-						{data.description}
-						<a href={data.link} target="_blank">
+						<a href={data.link} target="_blank" className='btn btn-primary'>
 							View Project
 						</a>
 					</div>
