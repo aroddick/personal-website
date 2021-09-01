@@ -1,6 +1,8 @@
 .container {
-  background:rgba(54,99,143, 0.9);
+  background: rgba(54,99,143);
   text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .container h1 {
@@ -48,21 +50,4 @@ textarea {
   font-size: 125%;
   box-sizing: border-box;
   font-family: Montserrat-SemiBold;
-}
-
-button {
-  border-radius: 25px;
-  height: 50px;
-  padding: 0 40px;
-  outline: none;
-  border: none;
-  font-family: Montserrat-Medium;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  font-weight: 400;
-  transition: all 0.4s;
-}
-
-button:hover {
-  cursor: pointer;
 }

@@ -44,13 +44,10 @@ const Resume = () => {
           <div className={classes.description}>
             <div className={classes.row}>
               <h2>Software Engineering Intern</h2>
-              <p>June 2020 - September 2020</p>
+              <p>June 2021 - September 2021</p>
             </div>
             <ul>
-              <li>Developed an API to enhance inventory curation by aggregating 10 metrics for a given item</li>
-              <li>Designed a modal on frontend to showcase metrics in tables, charts, and graphs</li>
-              <li>Collaborated with 3 other teams to supplement additional data to service</li>
-              <li>Researched a way to incorporate image quality recognition on site</li>
+              <li>In progress...</li>
             </ul>
           </div>
         </div>

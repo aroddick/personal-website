@@ -57,7 +57,6 @@ const ContactForm = () => {
                   message: 'Please use 30 characters or less'
                 }
               })}
-              className='form-control formInput'
               placeholder='Name'
             />
             {errors.name && <span className='errorMessage'>{errors.name.message}</span>}

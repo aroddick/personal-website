@@ -5,6 +5,8 @@ import ucsb from '../../assets/ucsb.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
+
+
 const About = () => {
   return (
     <div id='about' className='section'>
