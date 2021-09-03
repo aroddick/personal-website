@@ -12,7 +12,6 @@ const Header = () => {
 
   useEffect(() => {
     const sections = document.getElementsByClassName('section');
-    console.log(sections)
     const links = document.querySelectorAll('#header div a');
     for (let i = sections.length - 1; i >= 0; i--) {
       if (window.pageYOffset >= sections[i].offsetTop - window.screen.height / 2) {
