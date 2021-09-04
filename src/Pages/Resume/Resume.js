@@ -11,7 +11,7 @@ const Resume = () => {
       <h1>Education</h1>
       <div className={classes.list}>
         <div className={classes.row}>
-          <img src={ucsb} width={150}></img>
+          <img src={ucsb} width={150} alt="UCSB logo"></img>
           <div className={classes.description}>
             <h2>University of California, Santa Barbara</h2>
             <div className={classes.item}>
@@ -40,7 +40,7 @@ const Resume = () => {
       <h1>Work Experience</h1>
       <div className={classes.list}>
         <div className={classes.row}>
-          <img src={ebay} width={150}></img>
+          <img src={ebay} width={150} alt="eBay logo"></img>
           <div className={classes.description}>
             <div className={classes.row}>
               <h2>Software Engineering Intern</h2>
@@ -53,7 +53,7 @@ const Resume = () => {
         </div>
         <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ width: '100%', fontSize: '3rem' }} />
         <div className={classes.row}>
-          <img src={ucsb} width={150}></img>
+          <img src={ucsb} width={150} alt="UCSB logo"></img>
           <div className={classes.description}>
             <div className={classes.row}>
               <h2>Undergraduate Learning Assistant</h2>
@@ -69,7 +69,7 @@ const Resume = () => {
         </div>
         <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ width: '100%', fontSize: '3rem' }} />
         <div className={classes.row}>
-          <img src={ebay} width={150}></img>
+          <img src={ebay} width={150} alt="eBay logo"></img>
           <div className={classes.description}>
             <div className={classes.row}>
               <h2>Software Engineering Intern</h2>

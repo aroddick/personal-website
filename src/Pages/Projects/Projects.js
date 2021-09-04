@@ -71,7 +71,7 @@ const Projects = () => {
 				<div className={classes.row}>
 					<div className={classes.project}>
 						<div>
-							<img className={classes.picture} src={telahance}></img>
+							<img className={classes.picture} src={telahance} alt="TelaHance Project"></img>
 							<div className={classes.overlay}>
 								<h2>Telahance</h2>
 								<button className={classes.viewProject} onClick={() => renderModal('telahance')}>View</button>
@@ -82,7 +82,7 @@ const Projects = () => {
 					</div>
 					<div className={classes.project}>
 						<div>
-							<img className={classes.picture} src={gauchotime}></img>
+							<img className={classes.picture} src={gauchotime} alt='GauchoTime Project'></img>
 							<div className={classes.overlay}>
 								<h2>GauchoTime</h2>
 								<button className={classes.viewProject} onClick={() => renderModal('gauchotime')}>View</button>

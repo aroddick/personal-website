@@ -8,7 +8,7 @@ const Slideshow = ({ show, handleClose, data }) => {
 			<Modal.Header closeButton>
 				<Modal.Title>
 					<div>
-						<a href={data.link} target="_blank" className='btn btn-primary'>
+						<a href={data.link} target="_blank" className='btn btn-primary' rel='noreferrer'>
 							View Project
 						</a>
 					</div>
@@ -21,6 +21,7 @@ const Slideshow = ({ show, handleClose, data }) => {
 						<img
 							className="d-block w-100"
 							src={image}
+							alt="Project Image"
 						/>
 					</Carousel.Item>))}
 				</Carousel>
