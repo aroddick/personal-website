@@ -1,0 +1,26 @@
+.container {
+  background: rgba(54,99,143);
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container h1 {
+  color: white;
+  border-bottom: none;
+}
+
+.row {
+  display: flex;
+  margin: 10px 0 20px;
+  justify-content: space-between;
+}
+
+.row > div {
+  width: 100%;
+  
+}
+
+.col6 {
+  max-width: 48%;
+}

@@ -1,0 +1,86 @@
+.header {
+  position: relative;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(4px);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.imageContainer {
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+.introduction {
+  max-width: 35%;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+  line-height: 24px;
+  position: relative;
+	padding: 10px 20px;
+  border-radius: 25px;
+  margin-left: 3rem;
+  padding: 1rem;
+  color: white; 
+  background: #0B93F6;
+} 
+
+.introduction:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: transparent #0B93F6;
+  border-width: 20px 20px 20px 0;
+  top: 50%;
+  left: -20px;
+  margin-top: -20px;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row .introduction {
+  align-self: center;
+}
+
+.links svg {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.links a {
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
