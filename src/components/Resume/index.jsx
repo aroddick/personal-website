@@ -40,18 +40,25 @@ const Resume = () => {
       <h1>Work Experience</h1>
       <div className={Styles.list}>
         <div className={Styles.row}>
+          <img src={ucsb} width={150} alt="UCSB logo"></img>
+          <div className={Styles.description}>
+            <div className={Styles.row}>
+              <h2>Teaching Assistant</h2>
+              <p>September 2021 - Present</p>
+            </div>
+          </div>
+        </div>
+        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block" }} />
+        <div className={Styles.row}>
           <img src={ebay} width={150} alt="eBay logo"></img>
           <div className={Styles.description}>
             <div className={Styles.row}>
               <h2>Software Engineering Intern</h2>
               <p>June 2021 - September 2021</p>
             </div>
-            <ul>
-              <li>In progress...</li>
-            </ul>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{margin: "auto", display: "block"}} />
+        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block" }} />
         <div className={Styles.row}>
           <img src={ucsb} width={150} alt="UCSB logo"></img>
           <div className={Styles.description}>
@@ -100,15 +107,16 @@ const Resume = () => {
           </ul>
         </div>
         <div>
-          <h2>Tools</h2>
+          <h2>Libraries/Frameworks/Tools</h2>
           <ul>
             <li>React</li>
+            <li>Vue</li>
             <li>Spring</li>
             <li>AWS</li>
             <li>scikit-learn</li>
             <li>PyTorch</li>
             <li>Keras</li>
-            <li>Bash Unix Shell</li>
+            <li>Unix Shell</li>
           </ul>
         </div>
 
