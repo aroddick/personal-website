@@ -48,7 +48,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block" }} />
+        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block", width: "3rem" }} />
         <div className={Styles.row}>
           <img src={ebay} width={150} alt="eBay logo"></img>
           <div className={Styles.description}>
@@ -58,7 +58,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block" }} />
+        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block", width: "3rem" }} />
         <div className={Styles.row}>
           <img src={ucsb} width={150} alt="UCSB logo"></img>
           <div className={Styles.description}>
@@ -74,7 +74,7 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block" }} />
+        <FontAwesomeIcon icon={faEllipsisH} color={'rgba(254,188,17,0.7)'} style={{ margin: "auto", display: "block", width: "3rem" }} />
         <div className={Styles.row}>
           <img src={ebay} width={150} alt="eBay logo"></img>
           <div className={Styles.description}>

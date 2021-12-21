@@ -64,7 +64,7 @@ import {
     </style>
   </head>
   <body>
-    <Nav />
+    <Nav client:load/>
     <div class='section imageContainer' id='home'>
       <img class='hero' src={Hero} alt='hero' />
       <div class='bodyContainer'>
@@ -72,10 +72,10 @@ import {
           <font>Alan Roddick</font>
           <div class='links'>
             <a href="https://github.com/aroddick" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faGithub} color="white" width="3rem" />
+              <FontAwesomeIcon icon={faGithub} color="white" style={{ width: "3rem" }} />
             </a>
             <a href="https://www.linkedin.com/in/alan-roddick/" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} color="white" width="3rem" />
+              <FontAwesomeIcon icon={faLinkedin} color="white" style={{ width: "3rem" }} />
             </a>
 
           </div>

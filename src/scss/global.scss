@@ -178,11 +178,11 @@ input {
 button {
   padding: 1em;
   cursor: pointer;
-  border-radius: 25px;
-  height: 50px;
+  border-radius: 50px;
   padding: 0 40px;
   outline: none;
   border: none;
+  background: none;
   font-family: Montserrat-Medium;
   font-size: 1.5rem;
   line-height: 1.2;
@@ -213,6 +213,7 @@ form {
 
 svg {
   width: 3rem;
+  height: auto!important;
 }
 
 h1 {
