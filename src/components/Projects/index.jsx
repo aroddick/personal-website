@@ -15,31 +15,32 @@ const Projects = () => {
         <div className={Styles.row}>
           <div className={Styles.project}>
             <div>
-              <img className={Styles.picture} src={telahance} alt="TelaHance Project"></img>
               <div className={Styles.overlay}>
                 <h2>Telahance</h2>
                 <a href={telahanceGithub} target="_blank" rel="noreferrer">
-                  <button className={Styles.viewProject}>
+                  <button>
                     View
                   </button>
                 </a>
                 <p className={Styles.description}>Senior Capstone project. Won second place.</p>
+                
               </div>
+              <img className={Styles.picture} src={telahance} alt="TelaHance Project"></img>
             </div>
 
           </div>
           <div className={Styles.project}>
             <div>
-              <img className={Styles.picture} src={gauchotime} alt='GauchoTime Project'></img>
               <div className={Styles.overlay}>
                 <h2>GauchoTime</h2>
                 <a href={gauchotimeGithub} target="_blank" rel="noreferrer">
-                  <button className={Styles.viewProject}>
+                  <button>
                     View
                   </button>
                 </a>
                 <p className={Styles.description}>School group project</p>
               </div>
+              <img className={Styles.picture} src={gauchotime} alt='GauchoTime Project'></img>
             </div>
           </div>
         </div>

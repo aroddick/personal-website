@@ -1,13 +1,16 @@
 .container {
-  background: rgba(54,99,143);
+  background: #ebeeee;
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
 .container h1 {
-  color: white;
   border-bottom: none;
+}
+
+.container form {
+  width: 90%;
 }
 
 .row {
@@ -23,4 +26,22 @@
 
 .col6 {
   max-width: 48%;
+}
+
+.row input, .row textarea {
+  border-radius: 25px;
+  border-color: transparent;
+}
+
+.container button {
+  background: white;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.errorMessage {
+  color: red;
+  float: left;
+  margin: 0.5rem 0 0 1rem;
 }

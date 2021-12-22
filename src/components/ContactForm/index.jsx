@@ -60,7 +60,7 @@ function ContactForm() {
               })}
               placeholder='Name'
             />
-            {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
+            {errors.name && <span className={Styles.errorMessage}>{errors.name.message}</span>}
           </div>
           <div className={Styles.col6}>
             <input
@@ -75,7 +75,7 @@ function ContactForm() {
               placeholder='Email address'
             ></input>
             {errors.email && (
-              <span className='errorMessage'>{errors.email.message}</span>
+              <span className={Styles.errorMessage}>{errors.email.message}</span>
             )}
           </div>
         </div>
@@ -94,7 +94,7 @@ function ContactForm() {
               placeholder='Subject'
             ></input>
             {errors.subject && (
-              <span className='errorMessage'>{errors.subject.message}</span>
+              <span className={Styles.errorMessage}>{errors.subject.message}</span>
             )}
           </div>
         </div>
@@ -109,10 +109,10 @@ function ContactForm() {
               })}
               placeholder='Message'
             ></textarea>
-            {errors.message && <span className='errorMessage'>Please enter a message</span>}
+            {errors.message && <span className={Styles.errorMessage}>Please enter a message</span>}
           </div>
         </div>
-        <button className='submit-btn' type='submit'>
+        <button type='submit'>
           Submit
         </button>
       </form>

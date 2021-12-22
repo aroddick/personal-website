@@ -22,7 +22,6 @@
 }
 
 .project {
-  width: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -72,16 +71,29 @@
   object-fit: cover;
 }
 
-.viewProject {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .description {
-  display: inline;
-  /* background: rgba(245, 240, 240, 1); */
   margin: 0;
   padding: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+  .row > div:not(:first-child) {
+    margin-top: 2rem;
+  }
+  .project {
+    margin: 0;
+  }
+  .overlay {
+    opacity: 1;
+    position: relative;
+    background: inherit;
+    color: inherit;
+  }
+  .project > div {
+    height: auto;
+  }
 }
