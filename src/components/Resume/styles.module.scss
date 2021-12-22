@@ -51,10 +51,36 @@
 
 .skills {
   justify-content: center;
+  overflow: scroll;
 }
 
 .skills > div {
   margin: 0 5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .skills > div {
+    margin: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row p:last-child {
+    margin-left: 0;
+  }
+  .description {
+    width: auto;
+  }
+  .item > .row {
+    align-items: flex-start;
+  }
+  .row > h2 {
+    text-align: center;
+  }
 }
 
 /* .skills ul {
