@@ -60,7 +60,7 @@
   justify-content: center;
 }
 
-.row .introduction {
+.row > * {
   align-self: center;
 }
 
@@ -83,4 +83,24 @@
 .links {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  .introduction {
+    max-width: 75%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .introduction::after {
+    border-width: 0 20px 20px 20px;
+    border-color: #0B93F6 transparent;
+    top: 0;
+    left: calc(50% - 20px);
+  }
+  .container {
+    top: 10%;
+  }
 }
