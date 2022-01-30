@@ -23,10 +23,10 @@ jobs:
     - name: Build project
       run: npm run build
       
-    - name: Restore CNAME and .nojekyll
+    - name: Add CNAME and .nojekyll
       run: |
-        git restore dist/CNAME
-        git restore dist/.nojekyll
+        touch dist/.nojekyll
+        echo www.alanroddick.com > dist/CNAME
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
