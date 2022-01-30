@@ -1,7 +1,7 @@
-import { h } from 'preact';
+import React from 'react';
 import Styles from './styles.module.scss';
-import telahance from '../../../public/assets/telahance.png';
-import gauchotime from '../../../public/assets/gauchotime.png';
+import telahance from '/assets/telahance.png';
+import gauchotime from '/assets/gauchotime.png';
 
 const Projects = () => {
 

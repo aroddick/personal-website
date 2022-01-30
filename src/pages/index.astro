@@ -6,88 +6,16 @@ import About from '../components/About/index.jsx';
 import Resume from '../components/Resume/index.jsx';
 import Projects from '../components/Projects/index.jsx';
 import ContactForm from '../components/ContactForm/index.jsx';
-import Hero from '../../public/assets/Hero.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLinkedin, faGithub
-} from '@fortawesome/free-brands-svg-icons';
+import Home from '../components/Home/index.jsx';
 
 ---
 <html lang="en">
   <head>
     <MainHead title="Alan Roddick" description="Alan Roddick's Personal Website" />
-    <style lang="scss">
-      $w-s: 750px;
-
-      .hero {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        filter: brightness(80%);
-        /* filter: blur(4px); */
-      }
-
-      .imageContainer {
-        height: 100vh;
-      }
-
-      .bodyContainer {
-        position: absolute;
-        width: 100%;
-        top: 45%;
-      }
-
-      .body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        font-size: 80px;
-        font-weight: 100;
-        line-height: 1.15;
-      }
-
-      .links * {
-        margin: 1rem;
-        text-decoration: none;
-      }
-
-      .links a {
-        -webkit-transition: opacity 300ms ease;
-        -moz-transition: opacity 300ms ease;
-        -ms-transition: opacity 300ms ease;
-        transition: opacity 300ms ease;
-      }
-
-      .links a:hover {
-        opacity: 0.6;
-      }
-
-      font {
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
     <Nav client:load/>
-    <div class='section imageContainer' id='home'>
-      <img class='hero' src={Hero} alt='hero' />
-      <div class='bodyContainer'>
-        <div class='body'>
-          <font>Alan Roddick</font>
-          <div class='links'>
-            <a href="https://github.com/aroddick" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faGithub} color="white" style={{ width: "3rem" }} />
-            </a>
-            <a href="https://www.linkedin.com/in/alan-roddick/" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} color="white" style={{ width: "3rem" }} />
-            </a>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
+    <Home />
     <About />
     <Resume />
     <Projects />

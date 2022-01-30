@@ -1,7 +1,7 @@
-import { h } from 'preact';
+import React from 'react';
 import Styles from './styles.module.scss';
-import headshot from '../../../public/assets/headshot.jpg';
-import ucsb from '../../../public/assets/ucsb.jpeg';
+import headshot from '/assets/headshot.jpg';
+import ucsb from '/assets/ucsb.jpeg';
 
 
 

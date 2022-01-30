@@ -1,5 +1,4 @@
-import { h } from 'preact';
-import { useState } from 'preact/hooks';
+import React, { useState } from 'react';
 import Styles from './styles.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';

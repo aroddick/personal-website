@@ -1,7 +1,7 @@
-import { h } from 'preact';
+import React from 'react';
 import Styles from './styles.module.scss';
-import ucsb from '../../../public/assets/ucsb-resume.png';
-import ebay from '../../../public/assets/ebay.png';
+import ucsb from '/assets/ucsb-resume.png';
+import ebay from '/assets/ebay.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 
