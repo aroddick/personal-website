@@ -40,6 +40,7 @@
 
 .icon {
   display: none;
+  
 }
 
 @media screen and (max-width: 850px) {
@@ -52,14 +53,14 @@
   .links {
     width: 100%;
   }
+  .links > * {
+    opacity: 1!important;
+  }
   .links a:not(:first-child) {display: none;}
   .links button.icon {
     display: block;
     margin-left: auto;
   }
-}
-
-@media screen and (max-width: 700px) {
   .links.responsive {
     position: relative;
     display: flex;
