@@ -7,6 +7,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 function Nav() {
   const [visible, setVisible] = useState(false);
   function toggleLinks() {
+    if (window.innerWidth > 700)
+      return
     visible ? setVisible(false) : setVisible(true);
   }
   return (
