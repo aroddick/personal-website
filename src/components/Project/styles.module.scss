@@ -7,23 +7,26 @@
 
 .project > a {
   position: relative;
-  height: 350px;
-  width: 450px;
+  max-width: 400px;
+  max-height: 350px;
+  width: 40vw;
+  height: 30vw;
   z-index: 0;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
 }
 
 .project > a:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
   z-index: 10;
   border: 8px sold #fff;
   box-shadow: 1px 4px 12px rgba(0,0,0, 0.7);
 }
 
 .overlay {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,14 +36,14 @@
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(54,99,143, 0.9);
   padding: 20px 30px;
   overflow: hidden;
   box-sizing: border-box;
   color: white;
 }
 .overlay:hover {
-  background: rgba(54,99,143, 0.9);
+  opacity: 1;
   
 }
 
@@ -67,8 +70,10 @@
 }
 
 .picture {
-  width: 450px;
-  height: 350px;
+  max-width: 400px;
+  max-height: 350px;
+  width: 40vw;
+  height: 30vw;
   object-fit: cover;
 }
   
