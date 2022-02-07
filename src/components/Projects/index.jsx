@@ -2,6 +2,7 @@ import React from 'react';
 import Styles from './styles.module.scss';
 import telahance from '/assets/telahance.png';
 import gauchotime from '/assets/gauchotime.png';
+import Project from '../Project/index';
 
 const Projects = () => {
 
@@ -13,36 +14,24 @@ const Projects = () => {
       <div className={Styles.container}>
         <h1>Projects</h1>
         <div className={Styles.row}>
-          <div className={Styles.project}>
-            <div>
-              <div className={Styles.overlay}>
-                <h2>Telahance</h2>
-                <a href={telahanceGithub} target="_blank" rel="noreferrer">
-                  <button>
-                    View
-                  </button>
-                </a>
-                <p className={Styles.description}>Senior Capstone project. Won second place.</p>
-                
-              </div>
-              <img className={Styles.picture} src={telahance} alt="TelaHance Project"></img>
-            </div>
-
-          </div>
-          <div className={Styles.project}>
-            <div>
-              <div className={Styles.overlay}>
-                <h2>GauchoTime</h2>
-                <a href={gauchotimeGithub} target="_blank" rel="noreferrer">
-                  <button>
-                    View
-                  </button>
-                </a>
-                <p className={Styles.description}>School group project</p>
-              </div>
-              <img className={Styles.picture} src={gauchotime} alt='GauchoTime Project'></img>
-            </div>
-          </div>
+          <Project
+            name="TelaHance"
+            description="Senior Capstone project. Won second place."
+            image={telahance}
+            github={telahanceGithub}
+          />
+          <Project
+            name="GauchoTime"
+            description="School group project"
+            image={gauchotime}
+            github={gauchotimeGithub}
+          />
+          {/* <Project
+            name="GauchoTime"
+            description="School group project"
+            image={gauchotime}
+            github={gauchotimeGithub}
+          /> */}
         </div>
       </div>
     </div>
