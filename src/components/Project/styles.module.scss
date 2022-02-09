@@ -2,15 +2,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  align-items: center;
+  margin: 0 1rem 2rem;
 }
 
 .project > a {
   position: relative;
-  max-width: 400px;
-  max-height: 350px;
-  width: 40vw;
-  height: 30vw;
+  max-width: 350px;
   z-index: 0;
   transition: transform 0.3s ease-in-out;
   -webkit-transition: transform 0.3s ease-in-out;
@@ -70,11 +68,8 @@
 }
 
 .picture {
-  max-width: 400px;
-  max-height: 350px;
-  width: 40vw;
-  height: 30vw;
   object-fit: cover;
+  vertical-align: middle;
 }
   
 @media screen and (max-width: 1000px) {
@@ -82,20 +77,9 @@
     align-items: center;
   }
   .project > a {
-    transition: unset;
+    // transition: unset;
   }
   .overlay {
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .project > a {
-    width: 80vw;
-    height: 60vw;
-  }
-  .picture {
-    width: 80vw;
-    height: 60vw;
   }
 }
