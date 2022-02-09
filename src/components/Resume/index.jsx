@@ -67,10 +67,10 @@ const Resume = () => {
               <p>September 2019 - March 2021</p>
             </div>
             <ul>
-              <li>Supervise 60 students with object-oriented design and implementation in labs for 2 hours a week</li>
-              <li>Collaborate with professor, TAs and tutors to discuss strategies for labs and homework 1 hour a week</li>
-              <li>Host 2 Office Hours a week to improve student understanding of material</li>
-              <li>Resolve student questions on an online forum for 2 hours a week</li>
+              <li>Supervised 60 students with object-oriented design and implementation in labs for 2 hours a week</li>
+              <li>Collaborated with professor, TAs and tutors to discuss strategies for labs and homework 1 hour a week</li>
+              <li>Hosted 2 Office Hours a week to improve student understanding of material</li>
+              <li>Resolved student questions on an online forum for 2 hours a week</li>
             </ul>
           </div>
         </div>
