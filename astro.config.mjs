@@ -6,14 +6,10 @@
 // helpful tooltips, and warnings if your exported object is invalid.
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
-// @ts-check
-/** @type {import('astro').AstroUserConfig} */
+import react from '@astrojs/react';
 export default {
-  // Enable the Preact renderer to support Preact JSX components.
-  renderers: [
-      '@astrojs/renderer-react'
-    ],
-  buildOptions: {
+  integrations: [react()],
+  build: {
     site: 'https://www.alanroddick.com/',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   }
 };
