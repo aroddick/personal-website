@@ -16,16 +16,16 @@
   "dependencies": {
     "@astrojs/react": "^1.1.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "bootstrap": "^5.2.0",
+    "bootstrap": "^5.2.3",
     "emailjs-com": "^3.2.0",
     "json-schema": ">=0.4.0",
-    "react-bootstrap": "^2.5.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.34.2",
+    "react-hook-form": "^7.41.5",
     "react-toastify": "^9.1.1"
   }
 }
