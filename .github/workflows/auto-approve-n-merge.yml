@@ -2,34 +2,27 @@ name: Auto approve and merge PRs by dependabot
 
 # Trigger the workflow on pull request
 on:
-  pull_request
+  pull_request_target
 
 jobs:
-  autoapprove:
-    name: Auto Approve a PR by dependabot # Name of the job
-    runs-on: ubuntu-latest # Environment on which the job runs
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    if: github.actor == 'dependabot[bot]'
     steps:
-      - name: Auto approve
-        uses: hmarr/auto-approve-action@v2.0.0 # Custom action for auto approval already available on marketplace
-        # Perform the auto approve action only when the PR is raised by dependabot
-        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
-        with:
-          github-token: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
+      - uses: hmarr/auto-approve-action@v3
   automerge:
     name: Auto merge after successful checks
     # By default, jobs run in parallel. To run the jobs sequentially, they keywords "needs" is needed.
     # Auto merge action can be done only when the PR is approved, hence this automerge needs autoapprove as a prerequisite
-    needs: autoapprove
+    needs: auto-approve
     runs-on: ubuntu-latest
     steps:
-      - name: Auto merge
-        # Custom action for auto merging already available on marketplace
-        uses: pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a
-        # Perform the auto merge action only when the PR is raised by dependabot
-        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.6"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
-          # By default, whenever dependabot raises a PR, it automatically assigns a label named "dependencies"
-          # So, this action merges those PRs labelled "dependencies" only
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: dependencies
           MERGE_METHOD: rebase
