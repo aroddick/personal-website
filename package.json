@@ -23,7 +23,7 @@
     "bootstrap": "^5.3.2",
     "emailjs-com": "^3.2.0",
     "json-schema": ">=0.4.0",
-    "react-bootstrap": "^2.8.0",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.46.2",
     "react-toastify": "^9.1.3"
