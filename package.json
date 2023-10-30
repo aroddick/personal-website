@@ -14,7 +14,7 @@
     "sass": "^1.69.4"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.3",
+    "@astrojs/react": "^3.0.4",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
